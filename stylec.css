@@ -1,0 +1,230 @@
+/* ============================= */
+/* MENU */
+/* ============================= */
+
+/* Estilos generales de la barra superior */
+.topheader {
+  position: fixed;              /* Deja el menú fijo en la parte superior al hacer scroll */
+  background-color: white;      /* Color de fondo blanco */
+  width: 100%;                  /* Ocupa todo el ancho de la pantalla */
+  height: 80px;                 /* Altura del menú */
+  display: flex;                /* Activa Flexbox para organizar elementos */
+  justify-content: space-between; /* Separa los elementos horizontalmente */
+  align-items: center;          /* Centra los elementos verticalmente */
+  padding: 0 20px;              /* Espacio interno: 0 arriba/abajo y 20px izquierda/derecha */
+}
+
+/* Lista principal del menú horizontal */
+.Menu-Horizontal {
+  list-style: none;             /* Quita las viñetas de la lista */
+  display: flex;                /* Coloca los elementos en fila */
+  justify-content: space-around;/* Distribuye los elementos con espacios alrededor */
+  width: 100%;                  /* Ocupa todo el ancho disponible */
+}
+
+/* Enlaces dentro del menú horizontal */
+.Menu-Horizontal li a {
+  text-decoration: none;        /* Quita el subrayado de los enlaces */
+  color: blue;                  /* Color azul para el texto */
+}
+
+/* Menú vertical desplegable */
+.Menu-Vertical {
+  padding: 0;                   /* Quita el espacio interno */
+  position: absolute;           /* Permite ubicarlo como menú flotante */
+  display: none;                /* Lo oculta inicialmente */
+  width: 200px;                 /* Ancho del menú desplegable */
+  list-style: none;             /* Quita las viñetas */
+}
+
+/* Cambio visual al pasar el mouse sobre un enlace */
+.Menu-Horizontal li a:hover {
+  color: red;                   /* Cambia el texto a rojo */
+  /* font-size: 20px; */         /* Cambiaría el tamaño de letra, pero está desactivado */
+}
+
+/* Muestra el menú vertical cuando el mouse pasa sobre el li */
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;               /* Muestra el submenú */
+}
+
+/* Enlaces dentro del menú vertical */
+.Menu-Vertical li a {
+  display: block;               /* Hace que cada enlace ocupe toda la línea */
+  text-decoration: none;        /* Quita el subrayado */
+  padding: 10px;                /* Espacio interno del enlace */
+}
+
+/* ============================= */
+/* SECCION CREDITOS */
+/* ============================= */
+
+.seccion-creditos {
+  padding: 60px 20px;           /* Espacio interno de la sección */
+  background-color: white;      /* Fondo blanco */
+}
+
+.cont-gral-creditos {
+  display: flex;                /* Organiza texto e imagen en fila */
+  justify-content: space-between;/* Separa los elementos */
+  align-items: center;          /* Centra verticalmente */
+  max-width: 1200px;            /* Ancho máximo del contenedor */
+  margin: 0 auto;               /* Centra el contenedor */
+  gap: 40px;                    /* Espacio entre texto e imagen */
+}
+
+.cont-cred-texto {
+  flex: 1;                      /* El texto ocupa una parte proporcional */
+}
+
+.cont-cred-texto h2 {
+  color: blue;                  /* Título azul */
+  margin-bottom: 15px;          /* Espacio debajo del título */
+}
+
+.cont-cred-texto p {
+  color: black;                 /* Texto negro */
+  line-height: 1.6;             /* Espacio entre líneas */
+}
+
+.cont-cred-img {
+  flex: 1;                      /* La imagen ocupa una parte proporcional */
+}
+
+.cont-cred-img img {
+  width: 100%;                  /* Imagen adaptable al contenedor */
+  max-width: 500px;             /* Ancho máximo de imagen */
+  border-radius: 10px;          /* Bordes redondeados */
+}
+
+/* ============================= */
+/* SECCION SEGUROS */
+/* ============================= */
+
+.seccion-productos {
+  padding: 60px 20px;           /* Espacio interno */
+  background-color: white;      /* Fondo blanco */
+}
+
+.cont-gral-productos {
+  display: flex;                /* Coloca texto y video en fila */
+  justify-content: space-between;/* Separa los elementos */
+  align-items: center;          /* Centra verticalmente */
+  max-width: 1200px;            /* Ancho máximo */
+  margin: 0 auto;               /* Centra el contenedor */
+  gap: 40px;                    /* Espacio entre elementos */
+}
+
+.cont-seg-texto {
+  flex: 1;                      /* Texto ocupa una parte proporcional */
+}
+
+.cont-seg-texto h2 {
+  color: blue;                  /* Título azul */
+  line-height: 1.6;             /* Espaciado entre líneas */
+}
+
+/* OJO: aquí dice buttom, debería ser button */
+.cont-seg-texto buttom {
+  margin-top: 20px;             /* Espacio superior */
+  padding: 10px 20px;           /* Espacio interno */
+  background-color: orange;     /* Fondo naranja */
+  color: black;                 /* Texto negro */
+  border: none;                 /* Sin borde */
+  border-radius: 5px;           /* Bordes redondeados */
+  cursor: pointer;              /* Cursor tipo mano */
+}
+
+.cont-seg-video {
+  flex: 1;                      /* Video ocupa una parte proporcional */
+}
+
+.cont-seg-video iframe {
+  width: 100%;                  /* Video adaptable */
+  max-width: 500px;             /* Ancho máximo */
+}
+
+/* ============================= */
+/* FORMULARIO */
+/* ============================= */
+
+.seccion-formulario {
+  background-color: #bceef3;    /* Fondo celeste */
+  padding: 40px;                /* Espacio interno */
+  border: 3px;                  /* Borde incompleto: falta tipo y color */
+  border-radius: 10px;          /* Bordes redondeados */
+  display: flex;                /* Activa Flexbox */
+  justify-content: center;      /* Centra el formulario */
+  margin-bottom: 40px;          /* Espacio inferior */
+}
+
+.cont-gral-formulario {
+  background-color: beige;      /* Fondo beige */
+  padding: 30px;                /* Espacio interno */
+  border: 2px solid rgb(3, 3, 139); /* Borde azul oscuro */
+  border-radius: 8px;           /* Bordes redondeados */
+  margin-bottom: 30px;          /* Espacio inferior */
+  width: 100%;                  /* Ocupa todo el ancho disponible */
+  max-width: 500px;             /* Ancho máximo */
+}
+
+.campo {
+  background-color: #c4eced;    /* Fondo celeste claro */
+  padding: 15px;                /* Espacio interno */
+  border: 1.5px solid red;      /* Borde rojo */
+  border-radius: 5px;           /* Bordes redondeados */
+  margin-bottom: 15px;          /* Separación entre campos */
+}
+
+.formulario label {
+  display: block;               /* Hace que el label ocupe una línea completa */
+  font-weight: 600;             /* Texto semi-negrita */
+  margin-bottom: 8px;           /* Espacio debajo del label */
+  color: #8421e0;               /* Color morado */
+}
+
+.formulario input[type="text"],
+.formulario select {
+  width: 100%;                  /* Ocupa todo el ancho */
+  padding: 8px;                 /* Espacio interno */
+  border: 1.5px solid #05056c;  /* Borde azul oscuro */
+  border-radius: 5px;           /* Bordes redondeados */
+  box-sizing: border-box;       /* Incluye padding y borde dentro del ancho */
+}
+
+.lista-checkbox,
+.lista-radio {
+  list-style: none;             /* Quita viñetas */
+  padding: 8px;                 /* Espacio interno */
+  border: 1px solid #0c8a0c;    /* Borde verde */
+  background-color: #63f0c1;    /* Fondo verde agua */
+  border-radius: 5px;           /* Bordes redondeados */
+}
+
+.formulario button {
+  background-color: #f46a08;    /* Fondo naranja */
+  padding: 10px 20px;           /* Espacio interno */
+  color: #05056c;               /* Texto azul oscuro */
+  border: 2px solid #05056c;    /* Borde azul oscuro */
+  border-radius: 5px;           /* Bordes redondeados */
+  cursor: pointer;              /* Cursor tipo mano */
+}
+
+/* ============================= */
+/* PIE DE PAGINA */
+/* ============================= */
+
+.seccion-footer {
+  background-color: #bdeede;    /* Fondo verde claro */
+  color: #05056c;               /* Color del texto */
+  padding: 40px 20px;           /* Espacio interno */
+}
+
+.cont-gral-footer {
+  display: flex;                /* Organiza elementos del footer en fila */
+  justify-content: space-between;/* Separa los elementos */
+  align-items: flex-start;      /* Alinea arriba los elementos */
+  max-width: 1200px;            /* Ancho máximo */
+  margin: 0 auto;               /* Centra el contenedor */
+  gap: 40px;                    /* Espacio entre columnas */
+}

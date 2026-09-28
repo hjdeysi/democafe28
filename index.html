@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Café Aroma - Lima</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app3.js"></script>
+  </head>
+
+  <body>
+    <!--LOGO Y MENUS-->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img height="50" width="50" src="images/cup-of-coffee.svg" alt="Logo Café Aroma" />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="">Menú</a></li>
+        <li>
+          <a href="">Productos</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Cafés</a></li>
+            <li><a href="">Tés</a></li>
+            <li><a href="">Postres</a></li>
+            <li><a href="">Snacks</a></li>
+          </ul>
+        </li>
+        <li><a href="">Reservas</a></li>
+        <li><a href="#contactanos">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <!--SECCION MENÚ-->
+    <section class="seccion-creditos">
+      <div class="cont-gral-creditos">
+        <div class="cont-cred-texto">
+          <h2>Sección Menú</h2>
+          <p>
+            En <strong>Café Aroma</strong> ofrecemos una experiencia única en cada taza. 
+            Nuestro menú combina granos seleccionados de distintas regiones del Perú con recetas artesanales,
+            logrando aromas y sabores que deleitan los sentidos.
+          </p>
+          <p>
+            Desde el clásico espresso hasta el latte vainilla o el té chai, cada bebida es preparada por baristas apasionados
+            que buscan brindarte un momento de pausa, calidez y buena conversación.
+          </p>
+        </div>
+
+        <div class="cont-cred-img">
+          <img src="images/cafe1.jpeg" alt="Tazas de café en Café Aroma" />
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION PRODUCTOS-->
+    <section class="seccion-productos">
+      <div class="cont-gral-productos">
+        <div class="cont-seg-texto">
+          <h2>Sección Productos</h2>
+          <p>
+            Disfruta de nuestra amplia variedad de cafés, tés y postres artesanales. 
+            Trabajamos con insumos frescos, orgánicos y de origen sostenible. 
+            Nuestros productos son elaborados cada mañana para garantizar su sabor y textura perfectos.
+          </p>
+          <p>
+            También puedes acompañar tu bebida con deliciosos croissants, brownies y tartas caseras.
+            Si deseas conocer más sobre nuestro proceso de tostado o reservas en nuestro local, contáctanos directamente.
+          </p>
+          <a href="indexchat.html">Chatea con Nosotros...</a>
+        </div>
+
+        <div class="cont-seg-video">
+          <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/VNzIrLrBFrM?si=vZ1xpq2CznHGmabg" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION FORMULARIO-->
+    <section class="seccion-formulario" id="contactanos">
+      <div class="cont-gral-formulario">
+        <h2>Formulario de Reservas</h2>
+        <p>Complete todos los datos para reservar su mesa o solicitar más información</p>
+
+        <form class="formulario" id="contactForm">
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre"
+            />
+          </div>
+
+          <!--lista despegable-->
+          <div class="campo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un país</option>
+              <option value="Perú">Perú</option>
+              <option value="México">México</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Chile">Chile</option>
+            </select>
+          </div>
+
+          <!--checkbox-->
+          <div class="campo">
+            <label>Preferencias:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label><input type="checkbox" name="intereses" value="Café">Café</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="intereses" value="Té">Té</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="intereses" value="Postres">Postres</label>
+              </li>
+            </ul>
+          </div>
+
+          <!--radio button-->
+          <div class="campo">
+            <label>Tipo de reserva:</label>
+            <ul class="lista-radio">
+              <li>
+                <label><input type="radio" name="reserva" value="individual">Individual</label>
+              </li>
+              <li>
+                <label><input type="radio" name="reserva" value="grupal">Grupal</label>
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="seccion-footer">
+        <div class="cont-gral-footer">
+        <div class="footer-info">
+          <h3>Acerca de nosotros</h3>
+          <p>
+            En <strong>Café Aroma</strong> celebramos la pasión por el buen café, la amistad y los momentos compartidos.
+            Ubicados en Lima, ofrecemos un espacio cálido y moderno para disfrutar de bebidas y postres artesanales.
+          </p>
+          <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-redes">
+          <h3>Nuestras redes</h3>
+          <ul class="lista-redes">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">TikTok</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-politica">
+          <h3>Políticas y Privacidad</h3>
+          <ul class="lista-proteccion">
+            <li><a href="">Protección de Datos</a></li>
+            <li><a href="">Política de Cookies</a></li>
+            <li><a href="">Términos de Servicio</a></li>
+            <li><a href="">Aviso Legal</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

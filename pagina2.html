@@ -1,0 +1,529 @@
+<!-- Indica que el documento usa HTML5 -->
+<!DOCTYPE html>
+
+<!-- Etiqueta raíz del documento HTML. lang="es" indica que el contenido está en español -->
+<html lang="es">
+
+  <!-- Encabezado del documento: aquí van configuraciones, título, enlaces a CSS y JS -->
+  <head>
+
+    <!-- Define la codificación de caracteres como UTF-8, permite usar tildes y ñ correctamente -->
+    <meta charset="UTF-8" />
+
+    <!-- Hace que la página sea adaptable a celulares, tablets y computadoras -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Indica compatibilidad con versiones antiguas de Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Café Aroma - Lima</title>
+
+    <!-- Conecta este HTML con el archivo de estilos CSS llamado styles.css -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Conecta este HTML con el archivo JavaScript app.js -->
+    <!-- defer indica que el script se ejecutará después de cargar el HTML -->
+    <script defer src="app.js"></script>
+
+  <!-- Cierre de la sección head -->
+  </head>
+
+  <!-- Cuerpo visible de la página web -->
+  <body>
+
+    <!-- Comentario que indica que esta parte corresponde al logo y los menús -->
+    <!--LOGO Y MENUS-->
+
+    <!-- Barra de navegación superior -->
+    <nav class="topheader">
+
+      <!-- Enlace que contiene el logo de la página -->
+      <a href="" class="logo">
+
+        <!-- Imagen del logo del café -->
+        <!-- height y width definen el tamaño de la imagen -->
+        <!-- src indica la ruta de la imagen -->
+        <!-- alt muestra un texto alternativo si la imagen no carga -->
+        <img height="50" width="50" src="images/cup-of-coffee.svg" alt="Logo Café Aroma" />
+
+      <!-- Cierre del enlace del logo -->
+      </a>
+
+      <!-- Lista principal del menú horizontal -->
+      <ul class="Menu-Horizontal">
+
+        <!-- Primer elemento del menú: Menú -->
+        <li><a href="">Menú</a></li>
+
+        <!-- Segundo elemento del menú: Productos -->
+        <li>
+
+          <!-- Enlace principal de Productos -->
+          <a href="">Productos</a>
+
+          <!-- Submenú vertical dentro de Productos -->
+          <ul class="Menu-Vertical">
+
+            <!-- Opción del submenú: Cafés -->
+            <li><a href="">Cafés</a></li>
+
+            <!-- Opción del submenú: Tés -->
+            <li><a href="">Tés</a></li>
+
+            <!-- Opción del submenú: Postres -->
+            <li><a href="">Postres</a></li>
+
+            <!-- Opción del submenú: Snacks -->
+            <li><a href="">Snacks</a></li>
+
+          <!-- Cierre del submenú vertical -->
+          </ul>
+
+        <!-- Cierre del elemento Productos -->
+        </li>
+
+        <!-- Elemento del menú: Reservas -->
+        <li><a href="">Reservas</a></li>
+
+        <!-- Elemento del menú: Contáctanos -->
+        <!-- href="#contactanos" lleva a la sección que tiene id="contactanos" -->
+        <li><a href="#contactanos">Contáctanos</a></li>
+
+      <!-- Cierre del menú horizontal -->
+      </ul>
+
+    <!-- Cierre de la barra de navegación -->
+    </nav>
+
+    <!-- Comentario que indica el inicio de la sección Menú -->
+    <!--SECCION MENÚ-->
+
+    <!-- Sección principal del menú -->
+    <section class="seccion-creditos">
+
+      <!-- Contenedor general de la sección Menú -->
+      <div class="cont-gral-creditos">
+
+        <!-- Contenedor del texto de la sección Menú -->
+        <div class="cont-cred-texto">
+
+          <!-- Título de la sección -->
+          <h2>Sección Menú</h2>
+
+          <!-- Primer párrafo descriptivo -->
+          <p>
+
+            <!-- strong resalta el texto en negrita -->
+            En <strong>Café Aroma</strong> ofrecemos una experiencia única en cada taza. 
+
+            <!-- Texto descriptivo sobre el menú -->
+            Nuestro menú combina granos seleccionados de distintas regiones del Perú con recetas artesanales,
+
+            <!-- Continúa la descripción -->
+            logrando aromas y sabores que deleitan los sentidos.
+
+          <!-- Cierre del primer párrafo -->
+          </p>
+
+          <!-- Segundo párrafo descriptivo -->
+          <p>
+
+            <!-- Texto sobre las bebidas ofrecidas -->
+            Desde el clásico espresso hasta el latte vainilla o el té chai, cada bebida es preparada por baristas apasionados
+
+            <!-- Continúa la descripción del servicio -->
+            que buscan brindarte un momento de pausa, calidez y buena conversación.
+
+          <!-- Cierre del segundo párrafo -->
+          </p>
+
+        <!-- Cierre del contenedor de texto -->
+        </div>
+
+        <!-- Contenedor de imagen de la sección Menú -->
+        <div class="cont-cred-img">
+
+          <!-- Imagen relacionada con el café -->
+          <!-- src indica la ubicación de la imagen -->
+          <!-- alt describe la imagen para accesibilidad -->
+          <img src="images/cafe1.jpeg" alt="Tazas de café en Café Aroma" />
+
+        <!-- Cierre del contenedor de imagen -->
+        </div>
+
+      <!-- Cierre del contenedor general de la sección Menú -->
+      </div>
+
+    <!-- Cierre de la sección Menú -->
+    </section>
+
+    <!-- Comentario que indica el inicio de la sección Productos -->
+    <!--SECCION PRODUCTOS-->
+
+    <!-- Sección de productos -->
+    <section class="seccion-productos">
+
+      <!-- Contenedor general de la sección Productos -->
+      <div class="cont-gral-productos">
+
+        <!-- Contenedor del texto de productos -->
+        <div class="cont-seg-texto">
+
+          <!-- Título de la sección Productos -->
+          <h2>Sección Productos</h2>
+
+          <!-- Primer párrafo de la sección Productos -->
+          <p>
+
+            <!-- Texto introductorio de los productos -->
+            Disfruta de nuestra amplia variedad de cafés, tés y postres artesanales. 
+
+            <!-- Texto sobre los insumos usados -->
+            Trabajamos con insumos frescos, orgánicos y de origen sostenible. 
+
+            <!-- Texto sobre la elaboración diaria -->
+            Nuestros productos son elaborados cada mañana para garantizar su sabor y textura perfectos.
+
+          <!-- Cierre del primer párrafo -->
+          </p>
+
+          <!-- Segundo párrafo de la sección Productos -->
+          <p>
+
+            <!-- Texto sobre acompañamientos -->
+            También puedes acompañar tu bebida con deliciosos croissants, brownies y tartas caseras.
+
+            <!-- Texto que invita a contactar al local -->
+            Si deseas conocer más sobre nuestro proceso de tostado o reservas en nuestro local, contáctanos directamente.
+
+          <!-- Cierre del segundo párrafo -->
+          </p>
+
+          <!-- Botón informativo -->
+          <button>Leer más...</button>
+
+        <!-- Cierre del contenedor de texto de productos -->
+        </div>
+
+        <!-- Contenedor del video -->
+        <div class="cont-seg-video">
+
+          <!-- iframe permite incrustar contenido externo, en este caso un video de YouTube -->
+          <iframe 
+
+          <!-- Ancho del video -->
+          width="560" 
+
+          <!-- Alto del video -->
+          height="315" 
+
+          <!-- Ruta del video de YouTube incrustado -->
+          src="https://www.youtube.com/embed/VNzIrLrBFrM?si=vZ1xpq2CznHGmabg" 
+
+          <!-- Título descriptivo del reproductor de video -->
+          title="YouTube video player" 
+
+          <!-- Elimina o configura el borde del iframe -->
+          frameborder="0" 
+
+          <!-- Permisos que se dan al video incrustado -->
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+
+          <!-- Política de referencia para seguridad y privacidad -->
+          referrerpolicy="strict-origin-when-cross-origin" 
+
+          <!-- Permite ver el video en pantalla completa -->
+          allowfullscreen
+
+          <!-- Cierre de la apertura del iframe -->
+          ></iframe>
+
+        <!-- Cierre del contenedor del video -->
+        </div>
+
+      <!-- Cierre del contenedor general de productos -->
+      </div>
+
+    <!-- Cierre de la sección Productos -->
+    </section>
+
+    <!-- Comentario que indica el inicio de la sección Formulario -->
+    <!--SECCION FORMULARIO-->
+
+    <!-- Sección del formulario -->
+    <!-- id="contactanos" permite que el enlace del menú lleve directamente a esta sección -->
+    <section class="seccion-formulario" id="contactanos">
+
+      <!-- Contenedor general del formulario -->
+      <div class="cont-gral-formulario">
+
+        <!-- Título del formulario -->
+        <h2>Formulario de Reservas</h2>
+
+        <!-- Texto explicativo del formulario -->
+        <p>Complete todos los datos para reservar su mesa o solicitar más información</p>
+
+        <!-- Formulario de contacto o reserva -->
+        <!-- class="formulario" sirve para aplicar estilos CSS -->
+        <!-- id="contactForm" sirve para identificarlo desde JavaScript -->
+        <form class="formulario" id="contactForm">
+
+          <!-- Contenedor de un campo del formulario -->
+          <div class="campo">
+
+            <!-- Etiqueta del campo nombre -->
+            <!-- for="nombre" conecta el label con el input que tiene id="nombre" -->
+            <label for="nombre">Nombres Completos:</label>
+
+            <!-- Campo de entrada de texto -->
+            <input
+
+              <!-- type="text" indica que se ingresará texto -->
+              type="text"
+
+              <!-- id identifica de forma única este input -->
+              id="nombre"
+
+              <!-- name es el nombre del dato que se enviaría al servidor -->
+              name="nombre"
+
+              <!-- placeholder muestra un texto de ayuda dentro del input -->
+              placeholder="Ingrese su nombre"
+
+            <!-- Cierre del input -->
+            />
+
+          <!-- Cierre del contenedor del campo nombre -->
+          </div>
+
+          <!-- Comentario que indica que viene una lista desplegable -->
+          <!--lista despegable-->
+
+          <!-- Contenedor del campo país -->
+          <div class="campo">
+
+            <!-- Etiqueta del selector de país -->
+            <label for="pais">País:</label>
+
+            <!-- Lista desplegable para seleccionar país -->
+            <select id="pais" name="pais">
+
+              <!-- Opción inicial vacía para pedir selección -->
+              <option value="">Seleccione un país</option>
+
+              <!-- Opción Perú -->
+              <option value="Perú">Perú</option>
+
+              <!-- Opción México -->
+              <option value="México">México</option>
+
+              <!-- Opción Argentina -->
+              <option value="Argentina">Argentina</option>
+
+              <!-- Opción Chile -->
+              <option value="Chile">Chile</option>
+
+            <!-- Cierre del select -->
+            </select>
+
+          <!-- Cierre del campo país -->
+          </div>
+
+          <!-- Comentario que indica que vienen casillas de verificación -->
+          <!--checkbox-->
+
+          <!-- Contenedor del campo preferencias -->
+          <div class="campo">
+
+            <!-- Etiqueta general de las preferencias -->
+            <label>Preferencias:</label>
+
+            <!-- Lista de opciones checkbox -->
+            <ul class="lista-checkbox">
+
+              <!-- Primer elemento de la lista -->
+              <li>
+
+                <!-- Checkbox para seleccionar Café -->
+                <!-- name="intereses" agrupa los intereses -->
+                <!-- value="Café" es el valor que se enviaría si se marca -->
+                <label><input type="checkbox" name="intereses" value="Café">Café</label>
+
+              <!-- Cierre del primer elemento -->
+              </li>
+
+              <!-- Segundo elemento de la lista -->
+              <li>
+
+                <!-- Checkbox para seleccionar Té -->
+                <label><input type="checkbox" name="intereses" value="Té">Té</label>
+
+              <!-- Cierre del segundo elemento -->
+              </li>
+
+              <!-- Tercer elemento de la lista -->
+              <li>
+
+                <!-- Checkbox para seleccionar Postres -->
+                <label><input type="checkbox" name="intereses" value="Postres">Postres</label>
+
+              <!-- Cierre del tercer elemento -->
+              </li>
+
+            <!-- Cierre de la lista de checkbox -->
+            </ul>
+
+          <!-- Cierre del campo preferencias -->
+          </div>
+
+          <!-- Comentario que indica que vienen botones de radio -->
+          <!--radio button-->
+
+          <!-- Contenedor del campo tipo de reserva -->
+          <div class="campo">
+
+            <!-- Etiqueta general del tipo de reserva -->
+            <label>Tipo de reserva:</label>
+
+            <!-- Lista de opciones tipo radio -->
+            <ul class="lista-radio">
+
+              <!-- Primer elemento de la lista -->
+              <li>
+
+                <!-- Radio button para reserva individual -->
+                <!-- name="reserva" hace que solo se pueda elegir una opción de este grupo -->
+                <!-- value="individual" es el valor enviado si se selecciona -->
+                <label><input type="radio" name="reserva" value="individual">Individual</label>
+
+              <!-- Cierre del primer elemento -->
+              </li>
+
+              <!-- Segundo elemento de la lista -->
+              <li>
+
+                <!-- Radio button para reserva grupal -->
+                <label><input type="radio" name="reserva" value="grupal">Grupal</label>
+
+              <!-- Cierre del segundo elemento -->
+              </li>
+
+            <!-- Cierre de la lista de radio buttons -->
+            </ul>
+
+          <!-- Cierre del campo tipo de reserva -->
+          </div>
+
+          <!-- Botón para enviar el formulario -->
+          <!-- type="submit" indica que al hacer clic se envía el formulario -->
+          <button type="submit">Enviar</button>
+
+        <!-- Cierre del formulario -->
+        </form>
+
+      <!-- Cierre del contenedor general del formulario -->
+      </div>
+
+    <!-- Cierre de la sección Formulario -->
+    </section>
+
+    <!-- Comentario que indica el inicio del pie de página -->
+    <!-- FOOTER -->
+
+    <!-- Pie de página del sitio web -->
+    <footer class="seccion-footer">
+
+        <!-- Contenedor general del footer -->
+        <div class="cont-gral-footer">
+
+        <!-- Contenedor de información del footer -->
+        <div class="footer-info">
+
+          <!-- Título del bloque Acerca de nosotros -->
+          <h3>Acerca de nosotros</h3>
+
+          <!-- Párrafo descriptivo sobre el negocio -->
+          <p>
+
+            <!-- Nombre del negocio resaltado en negrita -->
+            En <strong>Café Aroma</strong> celebramos la pasión por el buen café, la amistad y los momentos compartidos.
+
+            <!-- Texto que indica ubicación y propuesta del local -->
+            Ubicados en Lima, ofrecemos un espacio cálido y moderno para disfrutar de bebidas y postres artesanales.
+
+          <!-- Cierre del párrafo -->
+          </p>
+
+          <!-- Texto de derechos reservados -->
+          <!-- &copy; representa el símbolo de copyright © -->
+          <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+
+        <!-- Cierre del bloque de información -->
+        </div>
+
+        <!-- Contenedor de redes sociales -->
+        <div class="footer-redes">
+
+          <!-- Título del bloque de redes -->
+          <h3>Nuestras redes</h3>
+
+          <!-- Lista de redes sociales -->
+          <ul class="lista-redes">
+
+            <!-- Enlace a Facebook -->
+            <li><a href="">Facebook</a></li>
+
+            <!-- Enlace a Instagram -->
+            <li><a href="">Instagram</a></li>
+
+            <!-- Enlace a TikTok -->
+            <li><a href="">TikTok</a></li>
+
+            <!-- Enlace a Twitter -->
+            <li><a href="">Twitter</a></li>
+
+          <!-- Cierre de la lista de redes -->
+          </ul>
+
+        <!-- Cierre del contenedor de redes -->
+        </div>
+
+        <!-- Contenedor de políticas y privacidad -->
+        <div class="footer-politica">
+
+          <!-- Título del bloque de políticas -->
+          <h3>Políticas y Privacidad</h3>
+
+          <!-- Lista de enlaces legales o informativos -->
+          <ul class="lista-proteccion">
+
+            <!-- Enlace a protección de datos -->
+            <li><a href="">Protección de Datos</a></li>
+
+            <!-- Enlace a política de cookies -->
+            <li><a href="">Política de Cookies</a></li>
+
+            <!-- Enlace a términos de servicio -->
+            <li><a href="">Términos de Servicio</a></li>
+
+            <!-- Enlace a aviso legal -->
+            <li><a href="">Aviso Legal</a></li>
+
+          <!-- Cierre de la lista de protección -->
+          </ul>
+
+        <!-- Cierre del contenedor de políticas -->
+        </div>
+
+      <!-- Cierre del contenedor general del footer -->
+      </div>
+
+    <!-- Cierre del footer -->
+    </footer>
+
+  <!-- Cierre del body -->
+  </body>
+
+<!-- Cierre del documento HTML -->
+</html>
